@@ -1,0 +1,37 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/gui.rpy", line 91, in script
+    define gui.main_menu_background = Transform("gui/main_menu.png", zoom=gui.scale)
+  File "game/gui.rpy", line 91, in script
+    define gui.main_menu_background = Transform("gui/main_menu.png", zoom=gui.scale)
+  File "game/gui.rpy", line 91, in <module>
+    define gui.main_menu_background = Transform("gui/main_menu.png", zoom=gui.scale)
+AttributeError: 'StoreModule' object has no attribute 'scale'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "D:\Programs\PROGRAMMING\renpy-8.3.5.25020701+nightly-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\Programs\PROGRAMMING\renpy-8.3.5.25020701+nightly-sdk\renpy\main.py", line 541, in main
+    renpy.game.context().run(node)
+  File "game/gui.rpy", line 91, in script
+    define gui.main_menu_background = Transform("gui/main_menu.png", zoom=gui.scale)
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "game/gui.rpy", line 91, in script
+    define gui.main_menu_background = Transform("gui/main_menu.png", zoom=gui.scale)
+  File "D:\Programs\PROGRAMMING\renpy-8.3.5.25020701+nightly-sdk\renpy\ast.py", line 2241, in execute
+    self.set()
+  File "D:\Programs\PROGRAMMING\renpy-8.3.5.25020701+nightly-sdk\renpy\ast.py", line 2255, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\Programs\PROGRAMMING\renpy-8.3.5.25020701+nightly-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/gui.rpy", line 91, in <module>
+    define gui.main_menu_background = Transform("gui/main_menu.png", zoom=gui.scale)
+AttributeError: 'StoreModule' object has no attribute 'scale'
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.5.25020701+nightly
+business negotiations 1.0
+Mon Feb 10 01:02:30 2025
